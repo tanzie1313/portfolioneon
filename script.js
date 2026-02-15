@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
-    document.querySelectorAll('.project-card').forEach(card => {
+    document.querySelectorAll('.project-row').forEach(card => {
         const delay = card.dataset.delay !== undefined ? Number(card.dataset.delay) * 0.12 : 0;
         card.style.opacity = '0';
         card.style.transform = 'translateY(24px)';
