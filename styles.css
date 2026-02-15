@@ -436,7 +436,14 @@ header {
 .project-card-featured .project-number { grid-row: 1; grid-column: 1; }
 .project-card-featured h3 { grid-row: 2; grid-column: 1; margin-bottom: 0; }
 .project-card-featured p { grid-row: 3; grid-column: 1; margin-bottom: 0; }
+.project-card-featured .project-links,
 .project-card-featured .project-link { grid-row: 4; grid-column: 1; }
+
+.project-links {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
 
 .project-card {
     background: rgba(26, 10, 46, 0.8);
@@ -616,6 +623,7 @@ footer {
     .project-card-featured .project-number,
     .project-card-featured h3,
     .project-card-featured p,
+    .project-card-featured .project-links,
     .project-card-featured .project-link {
         grid-column: 1;
     }
