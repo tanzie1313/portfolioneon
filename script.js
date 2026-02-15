@@ -1,3 +1,13 @@
+// Scroll progress bar
+const scrollProgress = document.getElementById('scrollProgress');
+if (scrollProgress) {
+    window.addEventListener('scroll', () => {
+        const winScroll = document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        scrollProgress.style.width = height > 0 ? (winScroll / height) * 100 + '%' : '0%';
+    });
+}
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -49,14 +59,22 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe elements for animation
+// Observe elements for animation with stagger for project cards
 document.addEventListener('DOMContentLoaded', () => {
-    const animateElements = document.querySelectorAll('.project-card, .about, .contact');
-    animateElements.forEach(el => {
+    const animateSections = document.querySelectorAll('.about .container, .contact .container');
+    animateSections.forEach(el => {
         el.style.opacity = '0';
-        el.style.transform = 'translateY(20px)';
+        el.style.transform = 'translateY(24px)';
         el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(el);
+    });
+
+    document.querySelectorAll('.project-card').forEach(card => {
+        const delay = card.dataset.delay !== undefined ? Number(card.dataset.delay) * 0.12 : 0;
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(24px)';
+        card.style.transition = `opacity 0.5s ease ${delay}s, transform 0.5s ease ${delay}s`;
+        observer.observe(card);
     });
 });
 

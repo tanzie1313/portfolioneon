@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tanzie Hickory - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
     <header>
         <nav>
             <div class="nav-container">
@@ -23,15 +27,29 @@
 
     <main>
         <section id="home" class="hero">
+            <div class="hero-grid" aria-hidden="true"></div>
+            <div class="hero-shapes" aria-hidden="true">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
             <div class="hero-content">
-                <h1>Hello, I'm Tanzie Hickory</h1>
-                <p>I'm a passionate developer creating innovative web solutions and digital experiences</p>
+                <p class="hero-greeting">Hi, I'm</p>
+                <h1>Tanzie Hickory</h1>
+                <p class="hero-role">I'm a <span class="rotating-words"><span class="word">Developer</span><span class="word">Problem Solver</span><span class="word">Creator</span></span></p>
                 <div class="hero-buttons">
                     <a href="#projects" class="cta-button">View My Work</a>
                     <a href="https://www.linkedin.com/in/tanzie-hickory/" target="_blank" class="cta-button secondary">Connect on LinkedIn</a>
                 </div>
             </div>
         </section>
+
+        <div class="wave-wrap">
+            <svg class="wave wave-hero" viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="#0d0221"/>
+            </svg>
+        </div>
 
         <section id="about" class="about">
             <div class="container">
@@ -56,23 +74,44 @@
             </div>
         </section>
 
+        <div class="wave-wrap wave-wrap-dark">
+            <svg class="wave wave-about" viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0 80L48 70C96 60 192 40 288 35C384 30 480 40 576 45C672 50 768 50 864 42.5C960 35 1056 20 1152 17.5C1248 15 1344 25 1392 30L1440 35V80H1392C1344 80 1248 80 1152 80C1056 80 960 80 864 80C768 80 672 80 576 80C480 80 384 80 288 80C192 80 96 80 48 80H0Z" fill="#ff00ff"/>
+            </svg>
+        </div>
+
         <section id="projects" class="projects">
             <div class="container">
-                <h2>My Projects</h2>
-                <div class="project-grid">
-                    <div class="project-card">
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">Things I've built and shipped</p>
+                <div class="project-grid project-grid-bento">
+                    <div class="project-card project-card-featured" data-delay="0">
+                        <span class="project-number">01</span>
                         <h3>Project 1</h3>
-                        <p>Description of your first project</p>
-                        <a href="#" class="project-link">View Project</a>
+                        <p>Description of your first project. Add tech stack and impact here.</p>
+                        <a href="#" class="project-link">View Project →</a>
                     </div>
-                    <div class="project-card">
+                    <div class="project-card" data-delay="1">
+                        <span class="project-number">02</span>
                         <h3>Project 2</h3>
-                        <p>Description of your second project</p>
-                        <a href="#" class="project-link">View Project</a>
+                        <p>Description of your second project.</p>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                    <div class="project-card" data-delay="2">
+                        <span class="project-number">03</span>
+                        <h3>Project 3</h3>
+                        <p>Another project you're proud of.</p>
+                        <a href="#" class="project-link">View Project →</a>
                     </div>
                 </div>
             </div>
         </section>
+
+        <div class="wave-wrap wave-wrap-blue">
+            <svg class="wave wave-projects" viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0 0L60 10C120 20 240 40 360 50C480 60 600 60 720 55C840 50 960 40 1080 35C1200 30 1320 30 1380 30L1440 30V0H1380C1320 0 1200 0 1080 0C960 0 840 0 720 0C600 0 480 0 360 0C240 0 120 0 60 0H0Z" fill="#ff00ff"/>
+            </svg>
+        </div>
 
         <section id="contact" class="contact">
             <div class="container">
