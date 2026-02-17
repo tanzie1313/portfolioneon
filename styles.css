@@ -481,6 +481,21 @@ header {
     justify-content: center;
 }
 
+.project-screenshot {
+    width: 100%;
+    height: auto;
+    min-height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid rgba(255, 0, 255, 0.4);
+    transition: all 0.3s ease;
+}
+
+.project-row:hover .project-screenshot {
+    border-color: var(--neon-cyan);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+}
+
 .project-visual-placeholder {
     width: 100%;
     min-height: 220px;
