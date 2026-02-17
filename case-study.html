@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies - Tanzie Hickory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <a href="index.html" class="logo">Tanzie Hickory</a>
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#resume">Resume</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="case-studies-main">
+        <div class="container">
+            <h1 class="case-studies-title">Case Studies</h1>
+            <p class="case-studies-subtitle">Deep dives into the projects I've built</p>
+            <a href="case-study.html" class="case-study-back-link" id="caseStudyBackLink" style="display: none;">← View all case studies</a>
+
+            <section id="ledgerline" class="case-study-section">
+                <span class="project-number">01</span>
+                <h2>LedgerLine</h2>
+                <div class="case-study-meta">React · Node.js · MongoDB</div>
+                <img src="images/ledgerline.png" alt="LedgerLine app screenshot" class="case-study-hero-img">
+                <div class="case-study-content">
+                    <h3>Technologies Used</h3>
+                    <div class="case-study-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Mongoose</span>
+                    </div>
+                    <h3>Overview</h3>
+                    <p>A personal finance tracker that helps users visualize spending, manage budgets, and track expenses across categories. Built to solve the pain of scattered spreadsheets and unclear financial habits.</p>
+                    <h3>Problem</h3>
+                    <p>Many people struggle to understand where their money goes. Spreadsheets are tedious to maintain, and generic apps often feel overwhelming or don't fit personal workflows.</p>
+                    <h3>Solution</h3>
+                    <p>LedgerLine offers a clean, intuitive interface for logging transactions and categorizing spending. Users can set budgets, view trends, and gain clarity on their finances without the friction of manual spreadsheet updates.</p>
+                    <div class="case-study-cta">
+                        <a href="https://ledgerline-a661b98ef7f7.herokuapp.com/" target="_blank" rel="noopener" class="project-link project-link-demo">Live Demo →</a>
+                        <a href="https://github.com/tanzie1313/LedgerLine" target="_blank" rel="noopener" class="project-link">GitHub →</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="workout-app" class="case-study-section">
+                <span class="project-number">02</span>
+                <h2>Workout App</h2>
+                <div class="case-study-meta">React · Node.js · Express</div>
+                <img src="images/workout-app.png" alt="Workout App screenshot" class="case-study-hero-img">
+                <div class="case-study-content">
+                    <h3>Technologies Used</h3>
+                    <div class="case-study-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">REST API</span>
+                    </div>
+                    <h3>Overview</h3>
+                    <p>A fitness companion that lets users log workouts, track progress over time, and stay accountable to their goals. Designed to replace paper logs and fragmented tracking across multiple apps.</p>
+                    <h3>Problem</h3>
+                    <p>Fitness enthusiasts often juggle notes, spreadsheets, and multiple apps to track workouts. There's no single place to log exercises, see progress, and stay motivated.</p>
+                    <h3>Solution</h3>
+                    <p>This full-stack app provides a unified experience: log workouts, add exercises with sets and reps, and review history. The React frontend and Node/Express backend work together for a smooth, responsive experience.</p>
+                    <div class="case-study-cta">
+                        <a href="https://tanzie.netlify.app/" target="_blank" rel="noopener" class="project-link project-link-demo">Live Demo →</a>
+                        <a href="https://github.com/tanzie1313/workout-app-frontend" target="_blank" rel="noopener" class="project-link">Frontend →</a>
+                        <a href="https://github.com/tanzie1313/workout-app-backend" target="_blank" rel="noopener" class="project-link">Backend →</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skatespot" class="case-study-section">
+                <span class="project-number">03</span>
+                <h2>SkateSpot</h2>
+                <div class="case-study-meta">Node.js · Express · EJS · MongoDB</div>
+                <img src="images/skatespot.png" alt="SkateSpot app screenshot" class="case-study-hero-img">
+                <div class="case-study-content">
+                    <h3>Technologies Used</h3>
+                    <div class="case-study-tech">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">EJS</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Mongoose</span>
+                        <span class="tech-tag">Bootstrap</span>
+                    </div>
+                    <h3>Overview</h3>
+                    <p>A community-driven platform for skaters to discover, rate, and share local skate spots. Addresses the challenge of finding new spots and getting reliable info on obstacles, surface quality, and access.</p>
+                    <h3>Problem</h3>
+                    <p>Skaters rely on word of mouth or random exploration to find spots. Info about obstacles, surface conditions, and whether a spot is skater-friendly is hard to find in one place.</p>
+                    <h3>Solution</h3>
+                    <p>SkateSpot lets the community contribute spots with descriptions, ratings, and photos. Built with server-side EJS templates and MongoDB, it creates a searchable, shareable database of skate locations.</p>
+                    <div class="case-study-cta">
+                        <a href="https://skatespot-app-3f603b27071d.herokuapp.com/" target="_blank" rel="noopener" class="project-link project-link-demo">Live Demo →</a>
+                        <a href="https://github.com/tanzie1313/SkateSpot" target="_blank" rel="noopener" class="project-link">GitHub →</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="spaceman" class="case-study-section">
+                <span class="project-number">04</span>
+                <h2>Spaceman</h2>
+                <div class="case-study-meta">JavaScript · HTML5 · CSS</div>
+                <img src="images/spaceman.png" alt="Spaceman game screenshot" class="case-study-hero-img">
+                <div class="case-study-content">
+                    <h3>Technologies Used</h3>
+                    <div class="case-study-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">DOM API</span>
+                    </div>
+                    <h3>Overview</h3>
+                    <p>A space-themed word-guessing game (inspired by Hangman) where players uncover letters before running out of guesses. Built to practice DOM manipulation and game logic with vanilla JavaScript.</p>
+                    <h3>Problem</h3>
+                    <p>Learning JavaScript means building real interactive experiences. A game like Hangman exercises core skills: state management, user input, DOM updates, and win/lose logic.</p>
+                    <h3>Solution</h3>
+                    <p>Spaceman delivers a playable word game with a retro space aesthetic. Vanilla JS handles all game logic and DOM updates, reinforcing fundamentals without frameworks.</p>
+                    <div class="case-study-cta">
+                        <a href="https://tanzie1313.github.io/spaceman/" target="_blank" rel="noopener" class="project-link project-link-demo">Live Demo →</a>
+                        <a href="https://github.com/tanzie1313/spaceman" target="_blank" rel="noopener" class="project-link">GitHub →</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tanzie Hickory. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

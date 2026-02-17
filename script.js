@@ -59,6 +59,29 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
+// Case study page: show only the section matching the URL hash
+function filterCaseStudy() {
+    const hash = window.location.hash.slice(1);
+    const sections = document.querySelectorAll('.case-study-section');
+    const backLink = document.getElementById('caseStudyBackLink');
+
+    if (!hash) {
+        sections.forEach(s => s.classList.remove('case-study-hidden'));
+        if (backLink) backLink.style.display = 'none';
+        return;
+    }
+
+    sections.forEach(s => {
+        s.classList.toggle('case-study-hidden', s.id !== hash);
+    });
+    if (backLink) backLink.style.display = 'inline-block';
+}
+
+if (document.querySelector('.case-studies-main')) {
+    filterCaseStudy();
+    window.addEventListener('hashchange', filterCaseStudy);
+}
+
 // Observe elements for animation with stagger for project cards
 document.addEventListener('DOMContentLoaded', () => {
     const animateSections = document.querySelectorAll('.about .container, .contact .container');
